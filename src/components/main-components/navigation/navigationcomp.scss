@@ -1,0 +1,58 @@
+@mixin paragraphtext {
+  font-family: "AirbnbCereal_W_Bd";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 27px;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.02em;
+  color: #f7f7f7;
+}
+
+.middlenav-line {
+  height: 70px;
+
+  padding: 10px, 100px, 10px, 100px;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 100px;
+  background-color: #a02279;
+
+  .mtoken--div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    p {
+      @include paragraphtext;
+    }
+  }
+}
+
+//RESPONSIVE STYLING STARTS HERE
+@media (max-width: 799px) {
+  .middlenav-line {
+    width: 100%;
+    align-items: center;
+    padding: 5px 5px;
+  }
+  .corrrentmeta {
+    width: 50px;
+    height: 51px;
+  }
+}
+@media (max-width: 480px) {
+  .middlenav-line {
+    height: 300px;
+    width: 100%;
+    padding: 10px, 10px, 10px, 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 10px;
+  }
+}

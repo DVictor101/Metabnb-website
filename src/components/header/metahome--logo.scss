@@ -1,0 +1,46 @@
+@mixin align-to-background {
+  display: flex;
+  position: absolute;
+}
+
+.svgs {
+  display: flex;
+  width: 42px;
+  height: 100%;
+  position: relative;
+}
+.svg--window {
+  width: 12px;
+  height: 10px;
+  top: 22px;
+  @include align-to-background;
+  left: 22px;
+}
+.svg--roof {
+  width: 8px;
+  height: 2px;
+  @include align-to-background;
+  top: 9px;
+  left: 17px;
+}
+.svg--doorknob {
+  @include align-to-background;
+  width: 3px;
+  height: 3px;
+  top: 27px;
+  left: 13px;
+}
+.svg--celling {
+  width: 40px;
+  height: 2px;
+  @include align-to-background;
+  align-items: center;
+  justify-content: center;
+  top: 18px;
+  left: 1px;
+}
+.svg--toprooofline {
+  @include align-to-background;
+  top: 5px;
+  left: 19px;
+}

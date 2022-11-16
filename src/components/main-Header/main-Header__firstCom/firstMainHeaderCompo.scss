@@ -1,0 +1,100 @@
+.firstSecComp {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+
+  align-items: flex-start;
+
+  h2 {
+    font-family: sans-serif, "Red Rose";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 56px;
+    line-height: 70px;
+    color: #434343;
+    letter-spacing: -0.02em;
+
+    span {
+      background: linear-gradient(90deg, #a02279 11.45%, #a02279 11.46%);
+      padding-bottom: 4px;
+      -webkit-text-fill-color: transparent;
+      -webkit-background-clip: text;
+      background-clip: text;
+      font-family: sans-serif, "Red Rose";
+      font-weight: 400;
+      font-size: 56px;
+      letter-spacing: -0.02em;
+      background-color: blue;
+    }
+  }
+
+  p {
+    font-family: sans-serif, "Red Rose";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    width: 90%;
+    word-spacing: 10px;
+
+    margin-top: -5px;
+    color: #434343;
+  }
+  .input-box {
+    display: flex;
+    margin-top: 20px;
+    align-items: flex-end;
+    justify-content: center;
+
+    input {
+      height: 50px;
+      width: 390px;
+      padding-left: 10px;
+      background: rgba(247, 247, 247, 0.1);
+      border: 1px solid #a3a3a3;
+      border-radius: 8px 0px 0px 8px;
+      border-right: none;
+    }
+    .inputbtn {
+      color: white;
+      height: 54px;
+      width: 200px;
+      background-color: #a02279;
+      border: none;
+      border-radius: 0 10px 10px 0;
+      outline: none;
+      font-family: sans-serif, "Red Rose";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+//RESPONSIVE STYLING STARTS HERE
+@media (max-width: 799px) {
+  .firstSecComp {
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@media (max-width: 480px) {
+  .firstSecComp .input-box {
+    display: flex;
+    margin-top: 20px;
+    align-items: flex-end;
+    justify-content: center;
+  }
+  .firstSecComp .input-box input {
+    height: 50px;
+    width: 100%;
+    padding-left: 10px;
+  }
+}

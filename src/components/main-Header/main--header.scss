@@ -1,0 +1,30 @@
+.mainheader {
+  display: flex;
+  padding-top: 60px;
+  padding-right: 30px;
+  padding-left: 50px;
+  padding-bottom: 20px;
+  justify-content: space-between;
+}
+
+//RESPONSIVE STYLING STARTS HERE
+@media (max-width: 799px) {
+  .mainheader {
+    display: flex;
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-bottom: 20px;
+    flex-direction: column;
+  }
+}
+@media (max-width: 480px) {
+  .mainheader {
+    display: flex;
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-bottom: 20px;
+    flex-direction: column;
+  }
+}

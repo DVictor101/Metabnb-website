@@ -1,0 +1,140 @@
+.secimgmain__parent {
+  width: 100%;
+}
+.sec__main__img {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.sec__sec__img {
+  display: flex;
+  padding: 20px 50px;
+  justify-content: space-between;
+}
+.seconeachbox {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 50px;
+}
+
+.each__box {
+  border: 1px solid #d7d7d7;
+  border-radius: 15px;
+  padding-top: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 30px;
+  box-sizing: border-box;
+  display: flex;
+  width: 24%;
+  flex-direction: column;
+  cursor: pointer;
+}
+@media (max-width: 799px) {
+  .sec__sec__img {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    padding: 20px 10px;
+
+    justify-content: space-between;
+    .each__box {
+      padding-top: 20px;
+      padding-left: 20px;
+      padding-right: 20px;
+      padding-bottom: 30px;
+      margin-bottom: 20px;
+      display: flex;
+      width: 100%;
+      flex-direction: column;
+      cursor: pointer;
+
+      img {
+        width: 100%;
+      }
+    }
+  }
+  .sec__main__img {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+  }
+  .seconeachbox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    padding: 20px 10px;
+    width: 50%;
+
+    .each__box {
+      padding-top: 20px;
+      padding-left: 20px;
+      padding-right: 20px;
+      padding-bottom: 30px;
+      margin-bottom: 20px;
+      display: flex;
+      width: 100%;
+      flex-direction: column;
+      cursor: pointer;
+
+      img {
+        width: 100%;
+      }
+    }
+  }
+}
+@media (max-width: 480px) {
+  .secimgmain__parent {
+    width: 100%;
+    margin-top: 80px;
+  }
+  .sec__main__img {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .sec__sec__img {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 5px 0;
+
+    justify-content: space-between;
+  }
+  .each__box {
+    border: 1px solid #d7d7d7;
+    border-radius: 15px;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 30px;
+    box-sizing: border-box;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    cursor: pointer;
+    margin-bottom: 10px;
+  }
+  .seconeachbox {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 5px 0;
+    width: 100%;
+    .each__box {
+      border: 1px solid #d7d7d7;
+      border-radius: 15px;
+      padding-top: 20px;
+      padding-left: 20px;
+      padding-right: 20px;
+      padding-bottom: 30px;
+      box-sizing: border-box;
+      display: flex;
+      width: 100%;
+      flex-direction: column;
+      cursor: pointer;
+      margin-bottom: 10px;
+    }
+  }
+}

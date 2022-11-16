@@ -1,0 +1,92 @@
+.firstfootercomp {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  padding-top: 30px;
+}
+
+.metafoot--comp {
+  height: 100%;
+  width: 140%;
+}
+
+.facebook-foot {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-top: 20px;
+  height: 39%;
+
+  .facebook-footins {
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+  }
+}
+.atlogo--comp {
+  display: flex;
+  padding-top: 40px;
+}
+span {
+  color: white;
+  padding-left: 10px;
+  font-size: 16px;
+  font-family: "Red Rose", cursive;
+  font-style: normal;
+  font-weight: 400;
+}
+@media (max-width: 799px) {
+  .metafoot--comp {
+    height: 50%;
+    width: 140%;
+  }
+  .footimg {
+    width: 50px;
+    height: 51px;
+  }
+  .footimger {
+    height: 40%;
+    width: 40%;
+  }
+  .atlogo--comp {
+    display: flex;
+    padding-top: 10px;
+
+    span {
+      color: white;
+      padding-left: 10px;
+      font-size: 22px;
+
+      font-weight: 400;
+    }
+  }
+  .facebook-foot {
+    padding-top: 0;
+    height: 39%;
+
+    .facebook-footins {
+      width: 80%;
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+}
+@media (max-width: 480px) {
+  .metafoot--comp {
+    height: 100%;
+    width: 100%;
+  }
+  .footimger {
+    height: 80%;
+    width: 40%;
+  }
+  .facebook-foot {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-top: 0;
+    height: 39%;
+    text-align: center;
+    align-items: center;
+  }
+}

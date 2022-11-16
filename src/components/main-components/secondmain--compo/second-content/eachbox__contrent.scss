@@ -1,0 +1,29 @@
+.eachboxinfo {
+  display: flex;
+}
+.eachinfo__one {
+  width: 50%;
+  p {
+    font-family: "Red Rose", cursive;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 13px;
+    color: #434343;
+    font-weight: 400;
+  }
+}
+.eachinfo__two {
+  width: 50%;
+  .onemb_p {
+    font-weight: 800;
+  }
+  p {
+    font-family: Red Rose, Times, serif;
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 13px;
+    color: #434343;
+    font-weight: 700;
+    word-spacing: 1px;
+  }
+}
